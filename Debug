@@ -1,0 +1,5 @@
+// Error
+echo $OUTPUT->notification("ERROR", 'notifywarning');
+
+// Success
+echo $OUTPUT->notification("SUCCESS MSG", 'notifysuccess');
