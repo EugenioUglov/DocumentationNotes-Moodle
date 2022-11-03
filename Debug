@@ -1,5 +1,8 @@
 // Error
-echo $OUTPUT->notification("ERROR", 'notifywarning');
+echo $OUTPUT->notification("ERROR MSG", 'notifywarning');
 
 // Success
 echo $OUTPUT->notification("SUCCESS MSG", 'notifysuccess');
+
+// Info
+echo $OUTPUT->notification("INFO MSG".$import_query, 'info');
