@@ -1,26 +1,3 @@
-Find in which quiz is using question
-
-!!! Doesnt work
-1. Take quizid from url_sessions.
-In table url_sessions you can find results of users and quizid where is exercise.
-Find exercise by column exercisetype.
-Take quizid.
-
-2. Take instance from course_modules.
-Go to table course_modules.
-Search id by value of quizid.
-Take instance.
-
-3. Take questions id from quiz_slots.
-Go to table quiz_slots.
-Search in column quizid by instance value.
-Take questionid of rows.
-
-
-===============
-
-2 WAY
-
 1. Take quizid from url_sessions.
 In table mdl_url_sessions you can find results of users and quizid where is exercise.
 Find exercise by column exercisetype.
