@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/35881584/using-moodle-create-users-and-enroll-them-in-courses-via-sql/35912777#35912777
+
+https://stackoverflow.com/questions/36075251/creating-moodle-users-and-register-them-on-courses-programatically
+
+https://stackoverflow.com/questions/47688746/create-user-in-moodle-through-web-services-php
