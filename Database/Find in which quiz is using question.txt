@@ -1,0 +1,50 @@
+Find in which quiz is using question
+
+!!! Doesnt work
+1. Take quizid from url_sessions.
+In table url_sessions you can find results of users and quizid where is exercise.
+Find exercise by column exercisetype.
+Take quizid.
+
+2. Take instance from course_modules.
+Go to table course_modules.
+Search id by value of quizid.
+Take instance.
+
+3. Take questions id from quiz_slots.
+Go to table quiz_slots.
+Search in column quizid by instance value.
+Take questionid of rows.
+
+
+===============
+
+2 WAY
+
+1. Take quizid from url_sessions.
+In table mdl_url_sessions you can find results of users and quizid where is exercise.
+Find exercise by column exercisetype.
+Take quizid.
+
+2. Take module id from course_modules.
+Go to table mdl_course_modules.
+Search instance by value of quizid.
+Take id.
+
+Quiz with current id possible to find by URL:
+http://tandemonline.it/mod/quiz/edit.php?cmid={id of quiz}
+
+3. Take id's that are using in quiz.
+Go to table mdl_quiz_slots.
+Search quizid by quizid from mdl_url_sessions.
+Take quesitonid.
+
+4. Take exercise name from question table.
+Go to table mdl_question.
+Search id by questionid from mdl_quiz_slots.
+Take name.
+
+Request to get module id by exersize name.
+$quiz_id = SELECT 'quizid' FROM 'url_sessions' WHERE 'exercisetype' LIKE 'ordinaparole' ORDER BY `id` DESC
+
+SELECT id FROM 'course_modules' WHERE 'instance' = $quiz_id

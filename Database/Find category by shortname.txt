@@ -1,0 +1,9 @@
+$category = $DB->get_record("course_category",array("shortname"=>"shortname_of_category"));
+
+
+if ($category) { 
+    // Don't create
+}
+else {
+    // Create.
+}

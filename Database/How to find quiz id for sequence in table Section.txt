@@ -1,0 +1,5 @@
+How to find quiz id for sequence in table Section.
+
+In table course_modules find column instance and column module.
+Then get id of this row.
+Add to sequence this id.
