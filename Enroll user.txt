@@ -1,0 +1,1 @@
+https://github.com/moodle/moodle/blob/master/lib/enrollib.php#L2056
